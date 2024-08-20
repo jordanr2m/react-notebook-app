@@ -1,10 +1,8 @@
-
-
 const Footer = () => {
   return (
-    <div>
-      <h2>Footer</h2>
-    </div>
+    <footer className="Footer default-theme">
+      <p>X Total notes</p>
+    </footer>
   )
 }
 

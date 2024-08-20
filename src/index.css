@@ -13,10 +13,10 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   display: flex;
-  /* background-color: #efefef; */
+  background-color: #efefef;
 }
 
-/* Makes App width consistent */
+/* Make App width consistent */
 #root {
   flex-grow: 1;
   /* CENTER the app */
@@ -27,46 +27,64 @@ body {
 
 .App {
   width: 100%;
-  max-width: 800px; /* If we remove this, the app becomes FULL SCREEN !!! */
+  max-width: 1000px;
   height: 100vh;
   display: flex;
-  flex-direction: column; /* Make the Components stack on top of each other */
+  flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  border: 1px solid #333;
   box-shadow: 0px 0px 15px gray;
 }
 
-.Header,
-.Footer {
-  width: 100%;
+
+/***** THEME COLORS for APP *****/
+Header.default-theme,
+Footer.default-theme {
   background-color: #66d8f5;
-  padding: 1rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+}
+
+Nav.default-theme {
+  background-color: #333;
+}
+
+
+
+.Header {
+  width: 100%;
+  padding: 1.5rem;
 }
 
 .Header h1 {
-  font-size: 1.5rem;
-}
-
-.Header svg {
   font-size: 2rem;
 }
 
 .Footer {
+  width: 100%;
   padding: 0.75rem;
-  /* !! Good way to center when you have only 1 thing */
+  /* center when you have only 1 thing */
   display: grid;
   place-content: center;
 }
 
 .Nav {
   width: 100%;
-  background-color: #333;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+}
+
+
+
+
+.Home,
+.NewPost,
+.PostPage,
+.About,
+.Missing {
+  width: 100%;
+  flex-grow: 1; /* Take up all extra space */
+  padding: 1rem;
+  overflow-y: auto; /* Allows the Footer to stay sticky at the bottom of the window. Remove this to push Footer to bottom of page. */
+  background-color: #fff;
 }

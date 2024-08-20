@@ -2,8 +2,8 @@
 
 const Header = () => {
   return (
-    <header className='Header'>
-      <h1>Header</h1>
+    <header className='Header default-theme'>
+      <h1>Notebook App</h1>
     </header>
   )
 }

@@ -2,7 +2,7 @@
 
 const Nav = () => {
   return (
-    <nav className='Nav'>
+    <nav className='Nav default-theme'>
       <h1>Nav</h1>
     </nav>
   )
