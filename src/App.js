@@ -1,9 +1,11 @@
-
+import Header from './components/Header.js';
+import Nav from './components/Nav.js';
 
 function App() {
   return (
     <div className="App">
-      <h1>Hello world!</h1>
+      <Header />
+      <Nav />
     </div>
   );
 }
