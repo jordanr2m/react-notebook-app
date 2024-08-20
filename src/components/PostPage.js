@@ -2,9 +2,9 @@
 
 const PostPage = () => {
   return (
-    <div>
+    <main className="PostPage">
       <h2>Post Page</h2>
-    </div>
+    </main>
   )
 }
 

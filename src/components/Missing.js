@@ -2,9 +2,9 @@
 
 const Missing = () => {
   return (
-    <div>
+    <main className="Missing">
       <h1>Missing</h1>
-    </div>
+    </main>
   )
 }
 

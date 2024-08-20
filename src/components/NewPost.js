@@ -2,9 +2,9 @@
 
 const NewPost = () => {
   return (
-    <div>
+    <main className="NewPost">
       <h2>New Post</h2>
-    </div>
+    </main>
   )
 }
 
