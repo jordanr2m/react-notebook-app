@@ -127,7 +127,7 @@ body {
 }
 
 .Home,
-.NewPost,
+.NewNote,
 .PostPage,
 .About,
 .Missing {
@@ -207,7 +207,7 @@ body {
 
 .Missing p,
 .PostPage p,
-.NewPost p {
+.NewNote p {
   margin-top: 1rem;
 }
 

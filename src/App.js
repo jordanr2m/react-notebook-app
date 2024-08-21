@@ -1,6 +1,6 @@
 import Layout from './Layout.js';
 import Home from './components/Home.js';
-import NewPost from './components/NewPost.js';
+import NewNote from './components/NewNote.js';
 import PostPage from './components/PostPage.js';
 import About from './components/About.js';
 import Missing from './components/Missing.js';
@@ -14,7 +14,7 @@ function App() {
         <Route path="/" element={<Layout />} >
           <Route index element={<Home />} />
           <Route path="post">
-            <Route index element={<NewPost />} />
+            <Route index element={<NewNote />} />
             <Route path=":id" element={PostPage} />
           </Route>
           <Route path="about" element={<About />} />
