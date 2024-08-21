@@ -1,10 +1,20 @@
+import { Link } from "react-router-dom";
 
-
-const Note = () => {
+// Receives individual note from Feed component
+const Note = ({ note }) => {
   return (
-    <div>
-      
-    </div>
+    <article className="note">
+      <Link to={`note/${note.id}`}>
+        <h2>{note.title}</h2>
+        <p className="noteDate">{note.datetime}</p>
+      </Link>
+      {/* Show a snippet of body text */}
+      <p className="noteBody">{
+        (note.body).length <= 25
+          ? note.body
+          : `${(note.body).slice(0, 25)}...`
+      }</p>
+    </article>
   )
 }
 

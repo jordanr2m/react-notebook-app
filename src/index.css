@@ -128,7 +128,7 @@ body {
 
 .Home,
 .NewNote,
-.PostPage,
+.NotePage,
 .About,
 .Missing {
   width: 100%;
@@ -138,35 +138,35 @@ body {
   background-color: #fff;
 }
 
-.post {
+.note {
   margin-top: 1rem;
   padding-bottom: 1rem;
   border-bottom: 1px solid lightgray;
 }
 
-.Home .post a {
+.Home .note a {
   text-decoration: none;
 }
 
-.Home .post a,
-.Home .post a:visited {
+.Home .note a,
+.Home .note a:visited {
   color: #000;
 }
 
-.post:first-child {
+.note:first-child {
   margin-top: 0;
 }
 
-.post:last-child {
+.note:last-child {
   border-bottom: none;
 }
 
-.postDate {
+.noteDate {
   font-size: 0.75rem;
   margin-top: 0.25rem;
 }
 
-.postBody {
+.noteBody {
   margin: 1rem 0;
 }
 
@@ -206,12 +206,12 @@ body {
 }
 
 .Missing p,
-.PostPage p,
+.NotePage p,
 .NewNote p {
   margin-top: 1rem;
 }
 
-.PostPage button {
+.NotePage button {
   height: 48px;
   min-width: 48px;
   border-radius: 0.25rem;

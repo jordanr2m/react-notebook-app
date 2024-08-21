@@ -21,7 +21,7 @@ const Nav = () => {
       {/* Nav Links */}
       <ul>
         <li><Link to="/">Home</Link></li>
-        <li><Link to="post">New Note</Link></li>
+        <li><Link to="note">New Note</Link></li>
         <li><Link to="about">Settings</Link></li>
       </ul>
     </nav>

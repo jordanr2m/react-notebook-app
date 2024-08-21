@@ -11,7 +11,7 @@ const Home = () => {
       {notes.length ? (
         <Feed />
       ) : (
-        <p style={{marginTop: '0.25rem'}}>No notes to display. Create a <Link to="post">new note</Link></p>
+        <p style={{marginTop: '0.25rem'}}>No notes to display. Create a <Link to="note">new note</Link></p>
       )}
     </main>
   )
