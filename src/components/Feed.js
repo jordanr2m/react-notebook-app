@@ -1,10 +1,7 @@
-import { useContext } from 'react';
-import DataContext from '../context/DataContext.js';
 import Note from './Note.js';
 
-const Feed = () => {
-    const { notes } = useContext(DataContext);
-
+// Pass searchResults down as notes prop
+const Feed = ({ notes }) => {
     return (
         <>
             {notes.map(note => (

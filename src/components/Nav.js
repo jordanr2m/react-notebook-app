@@ -13,6 +13,7 @@ const Nav = () => {
         <input
           id='search'
           type='text'
+          role='searchbox'
           placeholder='Search notes'
           value={search}
           onChange={(e) => setSearch(e.target.value)}

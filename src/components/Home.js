@@ -4,12 +4,12 @@ import { useContext } from 'react';
 import DataContext from '../context/DataContext.js';
 
 const Home = () => {
-  const { notes } = useContext(DataContext);
+  const { searchResults } = useContext(DataContext);
 
   return (
     <main className="Home">
-      {notes.length ? (
-        <Feed />
+      {searchResults.length ? (
+        <Feed notes={searchResults}/>
       ) : (
         <p style={{marginTop: '0.25rem'}}>No notes to display. Create a <Link to="note">new note</Link></p>
       )}
