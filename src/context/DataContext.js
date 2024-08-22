@@ -33,12 +33,12 @@ export const DataProvider = ({ children }) => {
           }
     ]);
 
-    // Functionality for Search Bar
+    // Search Bar
     useEffect(() => {
         const filteredNotes = notes.filter(note =>
             ((note.title).toLowerCase()).includes(search.toLowerCase())
             || ((note.body).toLowerCase()).includes(search.toLowerCase()));
-        setSearchResults(filteredNotes.reverse()); // newest note shows first
+        setSearchResults(filteredNotes.reverse());
     }, [notes, search]);
 
   return (

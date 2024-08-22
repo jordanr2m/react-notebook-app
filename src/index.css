@@ -231,7 +231,7 @@ body {
 }
 
 .statusMsg {
-  margin-top: 2rem;
+  margin-top: 0.5rem;
 }
 
 @media only screen and (min-width: 610px) {
