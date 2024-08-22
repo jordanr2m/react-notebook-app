@@ -132,9 +132,9 @@ body {
 .About,
 .Missing {
   width: 100%;
-  flex-grow: 1; /* Allows components to take all of the extra vertical space */
+  flex-grow: 1; /* grow vertically to fill space */
   padding: 1rem;
-  overflow-y: auto; /* Allows Footer to stay sticky at the bottom of the window */
+  overflow-y: auto; /* Sticky footer */
   background-color: #fff;
 }
 
@@ -170,17 +170,17 @@ body {
   margin: 1rem 0;
 }
 
-.newPostForm {
+.newNoteForm {
   display: flex;
   flex-direction: column;
 }
 
-.newPostForm label {
+.newNoteForm label {
   margin-top: 1rem;
 }
 
-.newPostForm input[type='text'],
-.newPostForm textarea {
+.newNoteForm input[type='text'],
+.newNoteForm textarea {
   font-family: 'Open Sans', sans-serif;
   width: 100%;
   min-height: 48px;
@@ -191,11 +191,11 @@ body {
   outline: none;
 }
 
-.newPostForm textarea {
+.newNoteForm textarea {
   height: 100px;
 }
 
-.newPostForm button {
+.newNoteForm button {
   margin-top: 1rem;
   height: 48px;
   min-width: 48px;
@@ -263,7 +263,7 @@ body {
     margin-left: 0.5rem;
   }
 
-  .newPostForm textarea {
+  .newNoteForm textarea {
     height: 300px;
   }
 }

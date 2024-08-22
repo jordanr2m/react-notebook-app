@@ -28,7 +28,7 @@ const NewNote = () => {
           value={noteTitle}
           onChange={(e) => setNoteTitle(e.target.value)}
         />
-        <label htmlFor='noteBody'>Body</label>
+        <label htmlFor='noteBody'>Content</label>
         <textarea
           id='noteBody'
           required
