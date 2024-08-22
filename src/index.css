@@ -18,6 +18,15 @@ body {
   background-color: #efefef;
 }
 
+button {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+  height: 48px;
+  min-width: 48px;
+  padding: 0.5rem;
+}
+
 /* Must have this for App width to stay consistent */
 #root {
   flex-grow: 1;
@@ -187,8 +196,6 @@ body {
   font-size: 1rem;
   padding: 0.25rem;
   border-radius: 0.25rem;
-  margin-right: 0.25rem;
-  outline: none;
 }
 
 .newNoteForm textarea {
@@ -197,29 +204,18 @@ body {
 
 .newNoteForm button {
   margin-top: 1rem;
-  height: 48px;
-  min-width: 48px;
   border-radius: 10px;
-  padding: 0.5rem;
-  font-size: 1rem;
-  cursor: pointer;
 }
 
 .Missing p,
-.NotePage p,
-.NewNote p {
+.NotePage p {
   margin-top: 1rem;
 }
 
 .NotePage button {
-  height: 48px;
-  min-width: 48px;
   border-radius: 0.25rem;
-  padding: 0.5rem;
   margin-right: 0.5rem;
-  font-size: 1rem;
   color: #fff;
-  cursor: pointer;
 }
 
 .deleteButton {
@@ -230,9 +226,6 @@ body {
   background-color: #333;
 }
 
-.statusMsg {
-  margin-top: 0.5rem;
-}
 
 @media only screen and (min-width: 610px) {
   html {
