@@ -18,15 +18,6 @@ body {
   background-color: #efefef;
 }
 
-button {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 1rem;
-  cursor: pointer;
-  height: 48px;
-  min-width: 48px;
-  padding: 0.5rem;
-}
-
 /* Must have this for App width to stay consistent */
 #root {
   flex-grow: 1;
@@ -50,8 +41,7 @@ button {
 .Header,
 .Footer {
   width: 100%;
-  /* background-color: #66d8f5; */
-  background-color: #66f58c;
+  background-color: #66d8f5;
 }
 
 .Header {
@@ -203,14 +193,18 @@ button {
   height: 100px;
 }
 
+.newNoteForm button,
+.NotePage button {
+  height: 48px;
+  min-width: 48px;
+  padding: 0.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
 .newNoteForm button {
   margin-top: 1rem;
   border-radius: 10px;
-}
-
-.Missing p,
-.NotePage p {
-  margin-top: 1rem;
 }
 
 .NotePage button {
@@ -220,14 +214,17 @@ button {
 }
 
 .deleteButton {
-  /* Changed color for now */
-  background-color: rgb(232, 5, 5);
+  background-color: red;
 }
 
 .editButton {
   background-color: #333;
 }
 
+.Missing p,
+.PostPage p {
+  margin-top: 1rem;
+}
 
 @media only screen and (min-width: 610px) {
   html {
