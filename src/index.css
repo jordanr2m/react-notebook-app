@@ -50,7 +50,7 @@ button {
 .Header,
 .Footer {
   width: 100%;
-  background-color: #66d8f5;
+  /* background-color: #66d8f5; */
 }
 
 .Header {
@@ -219,7 +219,8 @@ button {
 }
 
 .deleteButton {
-  background-color: red;
+  /* Changed color for now */
+  background-color: rgb(232, 5, 5);
 }
 
 .editButton {
