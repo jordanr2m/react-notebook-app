@@ -10,9 +10,9 @@ const Note = ({ note }) => {
       </Link>
       {/* Show a snippet of body text */}
       <p className="noteBody">{
-        (note.body).length <= 25
+        (note.body).length <= 50
           ? note.body
-          : `${(note.body).slice(0, 25)}...`
+          : `${(note.body).slice(0, 50)}...`
       }</p>
     </article>
   )

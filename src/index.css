@@ -190,7 +190,7 @@ body {
 }
 
 .newNoteForm textarea {
-  height: 100px;
+  height: 300px;
 }
 
 .newNoteForm button,
@@ -222,7 +222,7 @@ body {
 }
 
 .Missing p,
-.PostPage p {
+.NotePage p {
   margin-top: 1rem;
 }
 

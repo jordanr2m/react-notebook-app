@@ -22,6 +22,9 @@ const NotePage = () => {
             <h2>{note.title}</h2>
             <p className='noteDate'>{note.datetime}</p>
             <p className='noteBody'>{note.body}</p>
+            <Link to={`../../edit/${note.id}`}>
+              <button className="editButton">Edit Note</button>
+            </Link>
             <button className='deleteButton' 
               onClick={() => handleDelete(note.id)}>Delete Note</button>
           </>
@@ -29,9 +32,9 @@ const NotePage = () => {
         {/* Show this if note not found */}
         {!note && 
           <>
-            <h2>Post Not Found</h2>
+            <h2>Note Not Found</h2>
             <p>Well, that's disappointing</p>
-            <p><Link to="/">Visit Our Homepage</Link></p>
+            <p><Link to="/">Visit the Homepage</Link></p>
           </>
         }
       </article>

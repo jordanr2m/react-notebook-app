@@ -6,7 +6,7 @@ const Footer = () => {
 
   return (
     <footer className="Footer default-theme">
-      <p>{notes.length} {notes.length <= 1 ? "note" : " notes total"}</p>
+      <p>{notes.length} {notes.length === 1 ? "note" : "notes"}</p>
     </footer>
   )
 }
