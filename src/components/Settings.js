@@ -7,7 +7,7 @@ const Settings = () => {
   return (
     <main className="Settings">
       <h2>Settings</h2>
-      <label htmlFor='notebookTitle'>Notebook Title</label>
+      <label htmlFor='notebookTitle'>Notebook Title:</label>
       <input
         id='notebookTitle'
         type='text'

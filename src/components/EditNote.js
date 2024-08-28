@@ -49,7 +49,7 @@ const EditNote = () => {
                             value={editBody}
                             onChange={(e) => setEditBody(e.target.value)}
                         />
-                        <button type='button' onClick={() => handleEdit(note.id)}>Submit</button>
+                        <button type='button' onClick={() => handleEdit(note.id)}>Update</button>
                     </form>
                 </>
             }
