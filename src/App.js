@@ -3,7 +3,7 @@ import Home from './components/Home.js';
 import NewNote from './components/NewNote.js';
 import NotePage from './components/NotePage.js';
 import EditNote from './components/EditNote.js';
-import About from './components/About.js';
+import About from './components/Settings.js';
 import Missing from './components/Missing.js';
 import { Routes, Route } from 'react-router-dom';
 import { DataProvider } from './context/DataContext.js';

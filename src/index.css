@@ -129,7 +129,7 @@ body {
 .Home,
 .NewNote,
 .NotePage,
-.About,
+.Settings,
 .Missing {
   width: 100%;
   flex-grow: 1; /* grow vertically to fill space */
