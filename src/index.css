@@ -120,6 +120,11 @@ body {
   font-size: 1.5rem;
 }
 
+.Header h1, 
+.note h2 {
+  font-family: "Grandstander", cursive;
+}
+
 /* React icons are svg files */
 .Header svg {
   display: block; /* Remove extra whitespace on bottom */
@@ -196,8 +201,7 @@ body {
 .Settings,
 .Missing {
   width: 100%;
-  flex-grow: 1;
-  /* grow vertically to fill space */
+  flex-grow: 1; /* grow vertically to fill space */
   padding: 1rem;
   overflow-y: auto;
   /* Sticky footer */
@@ -214,18 +218,13 @@ body {
   border-bottom: 1px solid hsl(var(--accent) / 0.5);
 }
 
-.note h2,
-.Header h1 {
-  font-family: "Grandstander", cursive;
-}
-
 .Home .note a {
   text-decoration: none;
 }
 
 .Home .note a,
 .Home .note a:visited {
-  color: #000;
+  color: hsl(var(--txt));
 }
 
 .note:first-child {
@@ -279,19 +278,18 @@ body {
   padding: 0.5rem;
   font-size: 1rem;
   cursor: pointer;
+  color: hsl(var(--txt));
 }
 
 .newNoteForm button {
   margin-top: 1rem;
   border-radius: 10px;
   background-color: hsl(var(--accent));
-  color: hsl(var(--bg))
 }
 
 .NotePage button {
   border-radius: 0.25rem;
   margin-right: 0.5rem;
-  color: hsl(var(--bg));
 }
 
 .deleteButton {
@@ -300,6 +298,15 @@ body {
 
 .editButton {
   background-color: hsl(var(--accent));
+}
+
+.editButton:hover,
+.newNoteForm button:hover {
+  background-color: hsl(var(--accent) / 0.7);
+}
+
+.deleteButton:hover {
+  background-color: hsl(var(--accent1) / 0.7);
 }
 
 .Missing p,
