@@ -1,6 +1,66 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@0,100..900;1,100..900&display=swap');
 
+/* Theme Switcher Stlyes */
+:root {
+  --_hue: 245; /* Default hue value */
+
+  /* Light Mode */
+  --bg--light: var(--_hue) 30% 94%;
+  --txt--light: var(--_hue) 40% 5%;
+  --accent--light: var(--_hue) 55% 50%;
+  --accent1--light: 10 80% 60%; /* Red color */
+  --muted--light: var(--_hue) 30% 99%;
+  /* Dark Mode */
+  --bg--dark: var(--_hue) 15% 10%;
+  --txt--dark: var(--_hue) 30% 88%;
+  --accent--dark: var(--_hue) 50% 50%;
+  --accent1--dark: 10 55% 50%; /* Red color */
+  --muted--dark: var(--_hue) 20% 4%;
+}
+
+@media (prefers-color-scheme: dark) {
+  /* USE THESE VARs in Subsequent styles */
+  :root {
+    --bg: var(--bg--dark);
+    --txt: var(--txt--dark);
+    --accent: var(--accent--dark);
+    --accent1: var(--accent1--dark);
+    --muted: var(--muted--dark);
+    color-scheme: dark;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg: var(--bg--light);
+    --txt: var(--txt--light);
+    --accent: var(--accent--light);
+    --accent1: var(--accent1--light);
+    --muted: var(--muted--light);
+    color-scheme: light;
+  }
+}
+
+/* These will overwrite all the above styles, even if the user is in light or dark mode */
+:root[color-scheme="dark"] {
+  --bg: var(--bg--dark);
+  --txt: var(--txt--dark);
+  --accent: var(--accent--dark);
+  --accent1: var(--accent1--dark);
+  --muted: var(--muted--dark);
+  color-scheme: dark;
+}
+
+:root[color-scheme="light"] {
+  --bg: var(--bg--light);
+  --txt: var(--txt--light);
+  --accent: var(--accent--light);
+  --accent1: var(--accent1--light);
+  --muted: var(--muted--light);
+  color-scheme: light;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -43,7 +103,9 @@ body {
 .Header,
 .Footer {
   width: 100%;
-  background-color: #66d8f5;
+  /* background-color: #66d8f5; */
+  background-color: #85FFBD;
+  background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
 }
 
 .Header {
@@ -242,6 +304,11 @@ body {
 .Missing p,
 .NotePage p {
   margin-top: 1rem;
+}
+
+/* Theme Switcher */
+.Settings h3 {
+  margin-top: 3rem;
 }
 
 @media only screen and (min-width: 610px) {

@@ -14,6 +14,7 @@ const Nav = () => {
           id='search'
           type='text'
           role='searchbox'
+          autoComplete='off'
           placeholder='Search notes'
           value={search}
           onChange={(e) => setSearch(e.target.value)}

@@ -15,6 +15,8 @@ const Settings = () => {
         value={title}
         onChange={(e) => setTitle(e.target.value)}
       />
+
+      <h3>Theme Settings</h3>
     </main>
   )
 }
