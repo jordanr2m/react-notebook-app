@@ -71,8 +71,9 @@
 }
 
 .close {
-    position: absolute;
+    margin-bottom: 0.5rem;
+    /* position: absolute;
     top: -2em;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); */
 }
