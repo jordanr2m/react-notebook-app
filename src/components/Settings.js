@@ -1,5 +1,6 @@
 import { useContext } from 'react';
 import DataContext from '../context/DataContext.js';
+import ThemeSwitcher from './ThemeSwitcher.js';
 
 const Settings = () => {
   const { title, setTitle } = useContext(DataContext);
@@ -17,6 +18,7 @@ const Settings = () => {
       />
 
       <h3>Theme Settings</h3>
+      <ThemeSwitcher />
     </main>
   )
 }

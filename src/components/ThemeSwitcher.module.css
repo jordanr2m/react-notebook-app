@@ -1,7 +1,7 @@
 .wrapper {
-    position: fixed;
+    /* position: fixed;
     bottom: 0;
-    left: 0;
+    left: 0; */
     --wrapperSize: clamp(4em, 3vmax, 7em);
     padding: 1em 2em;
     width: 100%;
@@ -20,8 +20,10 @@
 }
 
 .picker {
+    /* Hide default picker */
     appearance: none;
     -webkit-appearance: none;
+    /* Custom picker */
     outline: none;
     height: calc(var(--wrapperSize) * 0.2);
     width: 100%;
@@ -47,8 +49,10 @@
 }
 
 .picker::-webkit-slider-thumb {
+    /* Hide default thumb */
     -webkit-appearance: none;
     appearance: none;
+    /* Custom thumb */
     height: calc(var(--wrapperSize) * 0.35);
     width: calc(var(--wrapperSize) * 0.35);
     border: none;

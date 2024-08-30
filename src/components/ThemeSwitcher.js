@@ -1,10 +1,11 @@
-
+// Scoped styles
+import styles from './ThemeSwitcher.module.css';
 
 const ThemeSwitcher = () => {
   return (
-    <div>
-      
-    </div>
+    <aside className={styles.wrapper}>
+      ThemeSwitcher
+    </aside>
   )
 }
 
