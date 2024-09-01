@@ -5,6 +5,7 @@ import { AiOutlineClose } from "react-icons/ai";
 
 const ThemeSwitcher = () => {
     const [theme, setTheme] = useState('light');
+    const [hue, setHue] = useState('240');
     const [isColorPicking, setIsColorPicking] = useState(false);
 
     return (
@@ -18,7 +19,15 @@ const ThemeSwitcher = () => {
                         onClick={() => setIsColorPicking(false)}>
                             <AiOutlineClose />
                         </button>
-                        <input type='range' />
+                        <input 
+                        className={styles.picker}
+                        type='range'
+                        // hsl goes from 0 to 360, use as min & max 
+                        min='0'
+                        max='360'
+                        aria-label='Change color theme slider'
+                        value={hue}
+                        onInput={(e) => setHue(e.target.value)}/>
                     </>
                 )
                 : (
