@@ -76,7 +76,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   display: flex;
-  background-color: hsl(var(--bg));
+  background-color: hsl(var(--muted));
   color: hsl(var(--txt));
 }
 
@@ -139,7 +139,7 @@ body {
 
 .Nav {
   width: 100%;
-  background-color: #333;
+  background-color: hsl(var(--muted));
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -163,7 +163,7 @@ body {
   font-size: 1rem;
   padding: 0.25rem;
   border-radius: 0.25rem;
-  border: none;
+  border: 2px solid hsl(var(--accent));
 }
 
 .Nav ul {
@@ -178,7 +178,7 @@ body {
 }
 
 .Nav li a {
-  color: #fff;
+  color: hsl(var(--txt));
   text-decoration: none;
 }
 
@@ -186,8 +186,8 @@ body {
 .Nav li:focus,
 .Nav li:hover a,
 .Nav li:focus a {
-  background-color: #eee;
-  color: #333;
+  background-color: hsl(var(--bg));
+  color: hsl(var(--txt));
 }
 
 .Nav li:hover a,
@@ -203,13 +203,8 @@ body {
   width: 100%;
   flex-grow: 1; /* grow vertically to fill space */
   padding: 1rem;
-  overflow-y: auto;
-  /* Sticky footer */
-  background-color: #fff;
-}
-
-.Home {
-  background-image: url('./img/paper-background.png');
+  overflow-y: auto; /* Sticky footer */
+  background-color: hsl(var(--bg));
 }
 
 .note {
@@ -265,6 +260,7 @@ body {
   font-size: 1rem;
   padding: 0.25rem;
   border-radius: 0.25rem;
+  border: 2px solid hsl(var(--accent));
 }
 
 .newNoteForm textarea {
@@ -279,6 +275,7 @@ body {
   font-size: 1rem;
   cursor: pointer;
   color: hsl(var(--txt));
+  border: none;
 }
 
 .newNoteForm button {
@@ -327,10 +324,13 @@ body {
   place-items: center;
   gap: 0.5em;
   background-color: hsl(var(--accent));
-  color: hsl(var(--bg));
+  color: hsl(var(--txt));
   border: none;
+  cursor: pointer;
   padding: 0.75rem;
   border-radius: 0.2rem;
+  /* box-shadow: 0.05em 0.1em 0.9em hsl(var(--accent) / 0.3),
+  0 0 0 -0.1em hsl(var(--bg)), 0 0 0 -0.2em hsl(var(--accent)); */
 }
 
 

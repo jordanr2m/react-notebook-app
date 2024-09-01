@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 // Scoped styles
 import styles from './ThemeSwitcher.module.css';
 import { AiOutlineClose } from "react-icons/ai";
@@ -7,6 +7,10 @@ const ThemeSwitcher = () => {
     const [theme, setTheme] = useState('light');
     const [hue, setHue] = useState('240');
     const [isColorPicking, setIsColorPicking] = useState(false);
+
+    useEffect(() => {
+        document.documentElement.setAttribute('color-scheme', theme); // adds an atr to the html
+    }, [theme]); // light/dark mode theme. Must pass it in here as a dependency since we use it in the fn
 
     return (
         <aside className={styles.wrapper}>
