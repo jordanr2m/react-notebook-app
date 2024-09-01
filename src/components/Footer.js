@@ -5,7 +5,7 @@ const Footer = () => {
   const { notes } = useContext(DataContext);
 
   return (
-    <footer className="Footer default-theme">
+    <footer className="Footer">
       <p>{notes.length} {notes.length === 1 ? "note" : "notes"}</p>
     </footer>
   )

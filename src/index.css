@@ -317,7 +317,7 @@ body {
 }
 
 .theme-btn {
-  font-size: 0.75rem;
+  font-size: 0.9rem;
   font-family: inherit;
   max-width: fit-content;
   display: flex;
@@ -332,7 +332,6 @@ body {
   /* box-shadow: 0.05em 0.1em 0.9em hsl(var(--accent) / 0.3),
   0 0 0 -0.1em hsl(var(--bg)), 0 0 0 -0.2em hsl(var(--accent)); */
 }
-
 
 @media only screen and (min-width: 610px) {
   html {
