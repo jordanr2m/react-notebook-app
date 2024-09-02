@@ -4,10 +4,10 @@ import styles from './ThemeSwitcher.module.css';
 import { AiOutlineClose } from "react-icons/ai";
 
 const ThemeSwitcher = () => {
-    const [hue, setHue] = useState(JSON.parse(localStorage.getItem('hue-value')) || "240");
-    // Check to see their theme preference
-    const defaultDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    const [theme, setTheme] = useState(JSON.parse(localStorage.getItem('theme')) || defaultDark ? 'dark' : 'light');
+    const [hue, setHue] = useState("240");
+    // Check to see their default theme preference
+    // const defaultDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    const [theme, setTheme] = useState('light');
     const [isColorPicking, setIsColorPicking] = useState(false);
 
     useEffect(() => {
