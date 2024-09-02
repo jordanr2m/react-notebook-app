@@ -9,8 +9,12 @@ const ThemeSwitcher = () => {
     const [isColorPicking, setIsColorPicking] = useState(false);
 
     useEffect(() => {
-        document.documentElement.setAttribute('color-scheme', theme); // adds an atr to the html
+        document.documentElement.setAttribute('color-scheme', theme); // adds an atr to the html element
     }, [theme]); // light/dark mode theme. Must pass it in here as a dependency since we use it in the fn
+
+    useEffect(() => {
+        document.documentElement.style.setProperty('--_hue', hue); // Setting custom css variable, --_hue
+    }, [hue]);
 
     return (
         <aside className={styles.wrapper}>
