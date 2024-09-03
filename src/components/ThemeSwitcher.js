@@ -19,7 +19,19 @@ const ThemeSwitcher = () => {
     }, [hue]); // anytime hue updates
 
     return (
-        <aside className={styles.wrapper}>
+        <aside className={styles.wrapper}
+        style={{
+            backgroundColor: isColorPicking 
+            ? 'hsl(var(--muted) / 0.6)'
+            : 'transparent',
+            padding: isColorPicking 
+            ? '1em' 
+            : '1em 0.25em',
+            marginTop: isColorPicking 
+            ? '1em'
+            : '0'
+        }}
+        >
             {isColorPicking ?
                 (
                     <>

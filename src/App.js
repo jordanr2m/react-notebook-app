@@ -19,7 +19,7 @@ function App() {
             <Route path=":id" element={<NotePage />} />
           </Route>
           <Route path="edit/:id" element={<EditNote />} />
-          <Route path="about" element={<About />} />
+          <Route path="settings" element={<About />} />
           <Route path="*" element={<Missing />} />
         </Route>
       </Routes>
