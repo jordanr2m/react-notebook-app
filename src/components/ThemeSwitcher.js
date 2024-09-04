@@ -1,40 +1,27 @@
-import { useEffect, useState } from 'react';
+import { useState, useContext } from 'react';
+import DataContext from '../context/DataContext.js';
 // Scoped styles
 import styles from './ThemeSwitcher.module.css';
 import { AiOutlineClose } from "react-icons/ai";
-// // Custom hook
-// import useLocalStorage from '../hooks/useLocalStorage';
-import { useContext } from 'react';
-import DataContext from '../context/DataContext.js';
+
 
 const ThemeSwitcher = () => {
-    // const [hue, setHue] = useLocalStorage('hue.color', '240');
-    // const defaultDark = window.matchMedia('(prefers-color-scheme: dark)').matches; // Check to see their default theme preference
-    // const [theme, setTheme] = useLocalStorage('theme', defaultDark ? 'dark' : 'light' );
     const { hue, setHue, theme, setTheme } = useContext(DataContext);
     const [isColorPicking, setIsColorPicking] = useState(false);
 
-    // useEffect(() => {
-    //     document.documentElement.setAttribute('color-scheme', theme); // adds an atr to the html element
-    // }, [theme]); // light/dark mode theme. Must pass it in here as a dependency since we use it in the fn
-
-    // useEffect(() => {
-    //     document.documentElement.style.setProperty('--_hue', hue); // Setting custom css variable, --_hue
-    // }, [hue]);
-
     return (
         <aside className={styles.wrapper}
-        style={{
-            backgroundColor: isColorPicking 
-            ? 'hsl(var(--muted) / 0.6)'
-            : 'transparent',
-            padding: isColorPicking 
-            ? '1em' 
-            : '1em 0.25em',
-            marginTop: isColorPicking 
-            ? '1em'
-            : '0'
-        }}
+            style={{
+                backgroundColor: isColorPicking
+                    ? 'hsl(var(--muted) / 0.6)'
+                    : 'transparent',
+                padding: isColorPicking
+                    ? '1em'
+                    : '1em 0.25em',
+                marginTop: isColorPicking
+                    ? '1em'
+                    : '0'
+            }}
         >
             {isColorPicking ?
                 (
