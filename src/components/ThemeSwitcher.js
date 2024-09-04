@@ -2,12 +2,13 @@ import { useEffect, useState } from 'react';
 // Scoped styles
 import styles from './ThemeSwitcher.module.css';
 import { AiOutlineClose } from "react-icons/ai";
+// Custom hook
+import useLocalStorage from '../hooks/useLocalStorage';
 
 const ThemeSwitcher = () => {
-    const [hue, setHue] = useState("240");
-    // Check to see their default theme preference
-    // const defaultDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    const [theme, setTheme] = useState('light');
+    const [hue, setHue] = useLocalStorage('hue.color', '240');
+    const defaultDark = window.matchMedia('(prefers-color-scheme: dark)').matches; // Check to see their default theme preference
+    const [theme, setTheme] = useLocalStorage('theme', defaultDark ? 'dark' : 'light' );
     const [isColorPicking, setIsColorPicking] = useState(false);
 
     useEffect(() => {
@@ -16,7 +17,7 @@ const ThemeSwitcher = () => {
 
     useEffect(() => {
         document.documentElement.style.setProperty('--_hue', hue); // Setting custom css variable, --_hue
-    }, [hue]); // anytime hue updates
+    }, [hue]);
 
     return (
         <aside className={styles.wrapper}
