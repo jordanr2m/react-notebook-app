@@ -343,6 +343,15 @@ svg {
   margin-top: 1em;
 }
 
+.Footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Footer p {
+  margin: 0 0.5rem;
+}
+
 /* MEDIA QUERIES */
 @media only screen and (min-width: 610px) {
   html {
