@@ -1,13 +1,12 @@
 .wrapper {
     --wrapperSize: clamp(4em, 3vmax, 7em);
-    /* display: grid;
-    place-items: center; */
 }
 
 .btns {
     display: flex;
     flex-direction: column;
     gap: 1em;
+    padding: 1em 0.25em;
 }
 
 .picker:focus {

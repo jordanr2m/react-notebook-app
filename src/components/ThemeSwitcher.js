@@ -10,19 +10,7 @@ const ThemeSwitcher = () => {
     const [isColorPicking, setIsColorPicking] = useState(false);
 
     return (
-        <aside className={styles.wrapper}
-            style={{
-                backgroundColor: isColorPicking
-                    ? 'hsl(var(--muted) / 0.6)'
-                    : 'transparent',
-                padding: isColorPicking
-                    ? '1em'
-                    : '1em 0.25em',
-                marginTop: isColorPicking
-                    ? '1em'
-                    : '0'
-            }}
-        >
+        <aside className={`${styles.wrapper} ${isColorPicking ? "theme-color-open" : ""}`}>
             {isColorPicking ?
                 (
                     <>

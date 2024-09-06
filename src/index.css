@@ -127,8 +127,11 @@ body {
 }
 
 /* React icons are svg files */
-.Header svg {
+svg {
   display: block; /* Remove extra whitespace on bottom */
+}
+
+.Header svg {
   font-size: 2rem;
 }
 
@@ -332,6 +335,12 @@ body {
   box-shadow: 0.05em 0.1em 0.9em hsl(var(--accent) / 0.3),
   0 0 0 -0.1em hsl(var(--bg)), 0 0 0 -0.2em hsl(var(--accent));
   cursor: pointer;
+}
+
+.theme-color-open {
+  background-color: hsl(var(--muted) / 0.6);
+  padding: 1em;
+  margin-top: 1em;
 }
 
 /* MEDIA QUERIES */
