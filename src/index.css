@@ -294,7 +294,7 @@ svg {
 .NotePage button {
   font-size: 0.8rem;
   border-radius: 0.25rem;
-  margin-right: 0.8rem;
+  margin-right: 1rem;
 }
 
 .deleteButton {
@@ -384,6 +384,10 @@ svg {
 
   .newNoteForm textarea {
     height: 300px;
+  }
+
+  .NotePage button {
+    margin-right: 0.8rem;
   }
 }
 
