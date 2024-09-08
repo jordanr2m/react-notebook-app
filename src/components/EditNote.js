@@ -42,7 +42,7 @@ const EditNote = () => {
                             value={editTitle}
                             onChange={(e) => setEditTitle(e.target.value)}
                         />
-                        <label htmlFor='noteBody'>Post</label>
+                        <label htmlFor='noteBody'>Content</label>
                         <textarea
                             id='noteBody'
                             required

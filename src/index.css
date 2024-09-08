@@ -4,6 +4,8 @@
 /* Theme Switcher Stlyes */
 :root {
   --_hue: 245; /* Default hue value */
+  --box-shadow: 0.05em 0.1em 0.9em hsl(var(--accent) / 0.3),
+  0 0 0 -0.1em hsl(var(--bg)), 0 0 0 -0.2em hsl(var(--accent));
 
   /* Light Mode */
   --bg--light: var(--_hue) 30% 94%;
@@ -118,7 +120,7 @@ body {
 }
 
 .Header h1 {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
 }
 
 .Header h1, 
@@ -212,8 +214,8 @@ svg {
 }
 
 .note {
-  margin-top: 1rem;
-  padding-bottom: 1rem;
+  margin-top: 1.25rem;
+  padding-bottom: 0.75rem;
   border-bottom: 1px solid hsl(var(--accent) / 0.5);
 }
 
@@ -227,7 +229,7 @@ svg {
 }
 
 .note:first-child {
-  margin-top: 0;
+  margin-top: 0.25rem;
 }
 
 .note:last-child {
@@ -280,8 +282,7 @@ svg {
   cursor: pointer;
   color: hsl(var(--txt));
   border: none;
-  box-shadow: 0.05em 0.1em 0.9em hsl(var(--accent) / 0.3),
-  0 0 0 -0.1em hsl(var(--bg)), 0 0 0 -0.2em hsl(var(--accent));
+  box-shadow: var(--box-shadow);
 }
 
 .newNoteForm button {
@@ -332,8 +333,7 @@ svg {
   border: none;
   padding: 0.75rem;
   border-radius: 0.2rem;
-  box-shadow: 0.05em 0.1em 0.9em hsl(var(--accent) / 0.3),
-  0 0 0 -0.1em hsl(var(--bg)), 0 0 0 -0.2em hsl(var(--accent));
+  box-shadow: var(--box-shadow);
   cursor: pointer;
 }
 
