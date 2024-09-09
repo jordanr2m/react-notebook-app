@@ -9,7 +9,7 @@ const Footer = () => {
   return (
     <footer className="Footer">
       <p>{datetime}</p>
-      <p>{notes.length} {notes.length === 1 ? "note total" : "notes total"}</p>
+      <p><b>{notes.length}</b> {notes.length === 1 ? "Note" : "Notes"}</p>
     </footer>
   )
 }
