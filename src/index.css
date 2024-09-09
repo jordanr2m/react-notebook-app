@@ -324,19 +324,6 @@ svg {
   margin-top: 3rem;
 }
 
-.theme-btn {
-  font-size: 0.9rem;
-  font-family: inherit;
-  max-width: fit-content;
-  background-color: hsl(var(--accent));
-  color: hsl(var(--txt));
-  border: none;
-  padding: 0.75rem;
-  border-radius: 0.2rem;
-  box-shadow: var(--box-shadow);
-  cursor: pointer;
-}
-
 .theme-color-open {
   background-color: hsl(var(--muted) / 0.6);
   padding: 1em;

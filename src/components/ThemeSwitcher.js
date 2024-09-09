@@ -15,7 +15,7 @@ const ThemeSwitcher = () => {
                 (
                     <>
                         <button
-                            className={`theme-btn ${styles.close}`}
+                            className={`${styles.themeBtn} ${styles.close}`}
                             aria-label='Close color picking mode'
                             onClick={() => setIsColorPicking(false)}>
                             <AiOutlineClose />
@@ -34,11 +34,11 @@ const ThemeSwitcher = () => {
                 : (
                     <div className={styles.btns}>
                         <button
-                            className='theme-btn'
+                            className= {`${styles.themeBtn}`}
                             onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}>
                             {theme === 'dark' ? 'Light Mode' : 'Dark Mode'}
                         </button>
-                        <button className='theme-btn'
+                        <button className={`${styles.themeBtn}`}
                             onClick={() => setIsColorPicking(true)}>
                             Choose Theme Color
                         </button>
