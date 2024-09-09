@@ -1,7 +1,6 @@
 import { useState, useContext } from 'react';
 import DataContext from '../context/DataContext.js';
-// Scoped styles
-import styles from './ThemeSwitcher.module.css';
+import styles from './ThemeSwitcher.module.css'; // Scoped styles
 import { AiOutlineClose } from "react-icons/ai";
 
 
@@ -10,7 +9,7 @@ const ThemeSwitcher = () => {
     const [isColorPicking, setIsColorPicking] = useState(false);
 
     return (
-        <aside className={`${styles.wrapper} ${isColorPicking ? "theme-color-open" : ""}`}>
+        <aside className={`${styles.wrapper} ${isColorPicking ? `${styles.themePickerOpen}` : ``}`}>
             {isColorPicking ?
                 (
                     <>
@@ -34,11 +33,11 @@ const ThemeSwitcher = () => {
                 : (
                     <div className={styles.btns}>
                         <button
-                            className= {`${styles.themeBtn}`}
+                            className= {styles.themeBtn}
                             onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}>
                             {theme === 'dark' ? 'Light Mode' : 'Dark Mode'}
                         </button>
-                        <button className={`${styles.themeBtn}`}
+                        <button className={styles.themeBtn}
                             onClick={() => setIsColorPicking(true)}>
                             Choose Theme Color
                         </button>

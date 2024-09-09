@@ -4,7 +4,7 @@
 /* Theme Switcher Stlyes */
 :root {
   --_hue: 245; /* Default hue value */
-  --box-shadow: 0.05em 0.1em 0.9em hsl(var(--accent) / 0.3),
+  --btn-shadow: 0.05em 0.1em 0.9em hsl(var(--accent) / 0.3),
   0 0 0 -0.1em hsl(var(--bg)), 0 0 0 -0.2em hsl(var(--accent));
 
   /* Light Mode */
@@ -126,6 +126,11 @@ body {
 .Header h1, 
 .note h2 {
   font-family: "Grandstander", cursive;
+}
+
+/* Theme Switcher */
+.Settings h3 {
+  margin-top: 3rem;
 }
 
 /* React icons are svg files */
@@ -282,7 +287,7 @@ svg {
   cursor: pointer;
   color: hsl(var(--txt));
   border: none;
-  box-shadow: var(--box-shadow);
+  box-shadow: var(--btn-shadow);
 }
 
 .newNoteForm button {
@@ -317,17 +322,6 @@ svg {
 .Missing p,
 .NotePage p {
   margin-top: 1rem;
-}
-
-/* Theme Switcher */
-.Settings h3 {
-  margin-top: 3rem;
-}
-
-.theme-color-open {
-  background-color: hsl(var(--muted) / 0.6);
-  padding: 1em;
-  margin-top: 1em;
 }
 
 .Footer {
