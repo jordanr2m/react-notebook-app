@@ -37,10 +37,14 @@
     appearance: none;
     -webkit-appearance: none;
     /* Custom picker */
+    width: 100%;
+    min-height: 48px;
+    font-size: 1rem;
+    padding: 0.25rem;
     outline: none;
     border: 0.2em solid hsl(var(--muted));
-    box-shadow: 0 0 0.8em hsl(var(--accent) / 0.4);
     border-radius: 100vmax;
+    box-shadow: 0 0 0.8em hsl(var(--accent) / 0.4);
     background: linear-gradient(to right,
             hsl(0, 50%, 50%),
             hsl(25, 50%, 50%),

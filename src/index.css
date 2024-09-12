@@ -82,16 +82,16 @@ body {
   color: hsl(var(--txt));
 }
 
-::selection {
-  background: hsl(var(--accent) / 0.8);
-  color: hsl(var(--bg));
-}
-
 #root {
   flex-grow: 1; /* Keep App width consistent */
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+::selection {
+  background: hsl(var(--accent) / 0.8);
+  color: hsl(var(--bg));
 }
 
 .App {
@@ -167,7 +167,10 @@ svg {
   left: -99999px;
 }
 
-.searchForm input[type="text"] {
+.searchForm input[type="text"],
+.newNoteForm input[type="text"],
+.newNoteForm textarea,
+.Settings input[type="text"] {
   font-family: 'Open Sans', sans-serif;
   width: 100%;
   min-height: 48px;
@@ -198,11 +201,6 @@ svg {
 .Nav li:hover a,
 .Nav li:focus a {
   background-color: hsl(var(--bg));
-  color: hsl(var(--txt));
-}
-
-.Nav li:hover a,
-.Nav li:focus a {
   cursor: pointer;
 }
 
@@ -262,18 +260,6 @@ svg {
   margin-bottom: 0.25rem;
 }
 
-.newNoteForm input[type='text'],
-.newNoteForm textarea,
-.Settings input {
-  font-family: 'Open Sans', sans-serif;
-  width: 100%;
-  min-height: 48px;
-  font-size: 1rem;
-  padding: 0.25rem;
-  border-radius: 0.25rem;
-  border: 2px solid hsl(var(--accent));
-}
-
 .newNoteForm textarea {
   height: 300px;
 }
@@ -282,7 +268,6 @@ svg {
 .NotePage button {
   height: 48px;
   min-width: 48px;
-  padding: 0.5rem;
   margin-top: 1rem;
   cursor: pointer;
   color: hsl(var(--txt));
@@ -297,9 +282,10 @@ svg {
 }
 
 .NotePage button {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   border-radius: 0.25rem;
   margin-right: 1rem;
+  padding: 0.75rem;
 }
 
 .deleteButton {
@@ -356,19 +342,17 @@ svg {
 
   .searchForm {
     width: 50%;
-    padding: .5rem 0;
+    padding: 0.5rem 0;
   }
 
   .searchForm input[type="text"] {
     margin-left: 0.5rem;
   }
 
-  .newNoteForm textarea {
-    height: 300px;
-  }
-
   .NotePage button {
+    font-size: 0.8rem;
     margin-right: 0.8rem;
+    padding: 0.5rem 0.6rem;
   }
 }
 
@@ -378,4 +362,7 @@ svg {
     font-size: 3rem;
   }
 
+  .newNoteForm button {
+    margin-top: 1.5rem;
+  }
 }
