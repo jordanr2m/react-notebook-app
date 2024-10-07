@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/react-notebook-app/static/css/main.05c4eaca.css",
+    "main.js": "/react-notebook-app/static/js/main.a2a0a495.js",
+    "index.html": "/react-notebook-app/index.html",
+    "main.05c4eaca.css.map": "/react-notebook-app/static/css/main.05c4eaca.css.map",
+    "main.a2a0a495.js.map": "/react-notebook-app/static/js/main.a2a0a495.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.05c4eaca.css",
+    "static/js/main.a2a0a495.js"
+  ]
+}
