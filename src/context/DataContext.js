@@ -9,7 +9,7 @@ export const DataProvider = ({ children }) => {
     const [search, setSearch] = useState('');
     const [searchResults, setSearchResults] = useState([]);
     const [notes, setNotes] = useState(JSON.parse(localStorage.getItem('noteslist')) || []);
-    const [hue, setHue] = useLocalStorage('hue.color', '160');
+    const [hue, setHue] = useLocalStorage('hue.color', '190');
     const defaultDark = window.matchMedia('(prefers-color-scheme: dark)').matches; // Check to see their default theme preference
     const [theme, setTheme] = useLocalStorage('theme', defaultDark ? 'dark' : 'light' );
 
