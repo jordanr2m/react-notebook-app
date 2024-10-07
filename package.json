@@ -1,7 +1,7 @@
 {
   "name": "react-notebook-app",
   "version": "0.1.0",
-  "homepage": "https://jordanr2m.github.io/react-notebook-app",
+  "homepage": "https://jordanr2m.github.io/react-notebook-app/",
   "private": true,
   "dependencies": {
     "date-fns": "^3.6.0",

@@ -3,7 +3,7 @@
 
 /* Theme Switcher Stlyes */
 :root {
-  --_hue: 245; /* Default hue value */
+  --_hue: 180; /* Default hue value */
   --btn-shadow: 0.05em 0.1em 0.9em hsl(var(--accent) / 0.3),
   0 0 0 -0.1em hsl(var(--bg)), 0 0 0 -0.2em hsl(var(--accent));
 
