@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/react-notebook-app/static/css/main.05c4eaca.css",
-    "main.js": "/react-notebook-app/static/js/main.a778ee1f.js",
+    "main.js": "/react-notebook-app/static/js/main.81848bc8.js",
     "index.html": "/react-notebook-app/index.html",
     "main.05c4eaca.css.map": "/react-notebook-app/static/css/main.05c4eaca.css.map",
-    "main.a778ee1f.js.map": "/react-notebook-app/static/js/main.a778ee1f.js.map"
+    "main.81848bc8.js.map": "/react-notebook-app/static/js/main.81848bc8.js.map"
   },
   "entrypoints": [
     "static/css/main.05c4eaca.css",
-    "static/js/main.a778ee1f.js"
+    "static/js/main.81848bc8.js"
   ]
 }
