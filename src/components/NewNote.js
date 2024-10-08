@@ -13,7 +13,7 @@ const NewNote = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     const id = (new Date().getTime()).toString(36);
-    const datetime = format(new Date(), 'MMMM dd, yyyy pp');
+    const datetime = format(new Date(), 'MMMM dd, yyyy - p');
     const newNote = { id, title: noteTitle, datetime, body: noteBody };
     const allNotes = [...notes, newNote];
     setNotes(allNotes);

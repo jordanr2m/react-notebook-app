@@ -20,7 +20,7 @@ const EditNote = () => {
     }, [note, setEditTitle, setEditBody]);
 
     const handleEdit = (id) => {
-        const datetime = format(new Date(), 'MMMM dd, yyyy pp');
+        const datetime = format(new Date(), 'MMMM dd, yyyy - p');
         const updatedNote = { id, title: editTitle, datetime, body: editBody };
         setNotes(notes.map(note => note.id === id ? updatedNote : note));
         setEditTitle('');

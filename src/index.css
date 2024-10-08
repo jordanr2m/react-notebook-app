@@ -167,15 +167,13 @@ svg {
   left: -99999px;
 }
 
-.searchForm input[type="text"],
-.newNoteForm input[type="text"],
-.newNoteForm textarea,
-.Settings input[type="text"] {
+input[type="text"],
+textarea {
   font-family: 'Open Sans', sans-serif;
   width: 100%;
   min-height: 48px;
   font-size: 1rem;
-  padding: 0.25rem;
+  padding: 0.4rem;
   border-radius: 0.25rem;
   border: 2px solid hsl(var(--accent));
 }
